@@ -1,0 +1,177 @@
+body{background-color: #621708;
+display: flex;
+justify-content: center;}
+
+.container{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.display-container{
+     position: fixed;
+     display:flex;
+     justify-content: space-around;
+     align-items: center;
+     top:10%;
+     border-right: #f6aa1c;
+     border-bottom: #f6aa1c;
+     border-bottom-style: groove;
+     border-right-style: groove;
+     border-radius: 10px;
+     height: 50px;
+     width:300px;
+     background-color:#220901;
+
+    }
+
+.custom-content{position: fixed;
+     display:flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+     top:20%;
+     border-right: #f6aa1c;
+     border-bottom: #f6aa1c;
+     border-bottom-style: groove;
+     border-right-style: groove;
+     border-radius: 10px;
+     width:300px;
+     height: 350px;
+     background-color:#220901;
+    
+}
+
+/* .length{
+    position: relative;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #f6aa1c;
+    padding: 15px;
+} */
+
+.passwordLength{
+    position:absolute;
+    left:2rem;
+    top:10%;
+    color:#f6aa1c;
+    font-size: 20px;
+} 
+
+.lengthValue{
+    position: absolute;
+    right: 1.5rem;
+    top:10%;
+    color:#f6aa1c;
+    font-size: 23px;
+
+}
+
+.passwordSlider{
+    position: absolute;
+    top:25%;
+    left:1.5rem;
+    
+}
+
+.slider{
+    width:200px;
+    height: 8px;
+    outline: none;
+    background-color: #f6aa1c;
+    box-shadow: 0 0 5px #f6aa1c ;
+    border-radius: 5px;
+}
+
+.details{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: #f6aa1c;
+    font-size: 18px;
+    margin-top: 10%;
+    
+}
+
+.strengthDiv{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top:80%;
+    height: 5px;
+    width:250px;
+
+}
+
+.strengthLabel{
+    position: absolute;
+    left:1.5rem;
+    font-size:20px ;
+    color: #f6aa1c;
+    
+}
+
+.light{
+    position: absolute;
+    height:15px;
+    width:15px;
+    background-color: #fffffe;
+    border-radius: 100%;
+    right: 1.5rem;
+}
+
+
+input::checkmark{
+    box-shadow: 0 0 5px #f6aa1c;
+}
+h1{color: #f6aa1c;}
+
+button{background-color:#220901 ;
+     color:#fffffe;}
+
+.copyButton{position: fixed;
+left:100%;}
+
+.generate{
+    position: absolute;
+    color:#f6aa1c;
+    background-color: #621708;
+    height: 35px;
+    width:150px;
+    bottom:2.5%;
+    border-right: #f6aa1c;
+     border-bottom: #f6aa1c;
+     border-bottom-style: groove;
+     border-right-style: groove;
+     border-radius: 10px;;
+}
+
+input{
+    background-color:#220901 ;
+    color:#f6aa1c;
+    border: none;
+    text-decoration-thickness: 48px;
+}
+
+input::placeholder{
+    position:absolute;
+    font-size: 1.15rem;
+    left:1.3rem;
+    
+    
+    color:#bc3908;
+    opacity: 0.65;
+    text-transform:uppercase ;
+    
+
+}
+
+.active{
+    opacity:0;
+    pointer-events: none;
+}
