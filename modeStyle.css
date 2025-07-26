@@ -1,0 +1,228 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,
+body{
+    height: 100%;
+    width:100%;
+    background-color: rgb(174, 151, 81);
+    /* padding: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#box{
+    position: absolute;
+    
+    height: 300px;
+    width: 300px;
+    background-color:rgb(134, 134, 72);
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: rgb(209, 209, 117) 10px solid;
+    
+}
+#toggleBox{
+    position: absolute;
+    display: flex;
+    
+    background-color:rgb(134, 134, 72);
+    border: 20px solid rgb(209, 209, 117);
+    height: 340px;
+    width: 635px;
+    border-bottom-left-radius: 170px ;
+    border-bottom-right-radius: 170px ;
+    border-top-left-radius: 170px ;
+    border-top-right-radius: 170px ;
+}
+.nightMode{
+    /* background-color:rgb(134, 134, 72); */
+    animation-name: nightBackground;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-delay: 0.5s;
+}
+.dayMode{
+    /* background-color: black;   */
+    animation-name: dayBackground;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-delay: 0.5s;
+}
+.animate{
+    animation-name: move;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    
+}
+.animateNight{
+    animation-name: night ;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.animateSun{
+    animation-name: sunAnimate;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.animateMoon{
+    animation-name: moonAnimate;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+#sun{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    border-radius: 100%;
+    box-shadow: 0 0 20px yellow;
+    
+}
+#sun:nth-child(2){
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    background-color: yellow;
+    border-radius: 100%;
+    box-shadow: 0 0 20px yellow;
+    left: 200px;
+}
+#modeText{
+    position: absolute;
+    top:40%;
+    left: 55%;
+    font-size: 3.5rem;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.dayModeText{
+    animation-name: dayText;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.nightModeText{
+    animation-name: nightText;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+/* Animation Keyframes */
+/* Box Animation */
+@keyframes move {
+    0%{
+        left:50%;
+        rotate:0;
+        background-color:black;
+        border-color:#d6d5d5
+    }
+    100%{
+        left:0%;
+        rotate:360deg;
+        background-color:rgb(134, 134, 72);
+        border-color :rgb(209, 209, 117);
+    }
+}
+@keyframes night {
+    from{
+        left:0%;
+        rotate: 0;
+        background-color: rgb(134, 134, 72);
+        border-color: rgb(209, 209, 117);
+
+    }
+    to{
+        left:50%;
+        rotate: 180deg;
+        background-color: black;
+        border-color: #d6d5d5;
+    }
+    
+}
+/* Sun and Moon Animation */
+@keyframes sunAnimate {
+    from{
+        background-color: #fff;
+        box-shadow: 0 0 20px #fff;
+       
+    }
+    to{
+        background-color:yellow;
+        box-shadow: 0 0 20px yellow;
+       
+    }
+} 
+@keyframes moonAnimate {
+    from{
+        background-color: yellow;
+        box-shadow: 0 0 20px  yellow;
+    }
+    to{
+        background-color: #fff;
+        box-shadow: 0 0 20px #fff;
+    }
+    
+}
+@keyframes nightBackground {
+    from{
+        background-color:rgb(134, 134, 72);
+        border-color: rgb(209, 209, 117);
+    }
+    to{
+        background-color: black;
+        border-color: #d6d5d5;
+    }
+    
+}
+@keyframes dayBAckgroundAnimation {
+    from{
+        background-color:black;
+        border-color: #d6d5d5;
+    }
+    to{
+        background-color: rgb(134, 134, 72);
+        border-color: rgb(209, 209, 117);
+    }
+    
+}
+@keyframes nightText {
+    from{
+        top:40%;
+        left: 55%;
+        color: black;
+        font-size: 3rem;
+        
+    }
+    to{
+        top: 40%;
+        left: 2%;
+        color: white;
+        font-size: 3rem;
+    }
+    
+}
+@keyframes dayText {
+    from{
+        top:40%;
+        left: 2%;
+        color: white;
+        font-size: 3rem;
+    }
+    to{
+        top:40%;
+        left: 55%;
+        color: black;
+        font-size: 3.5rem;
+    }
+    
+}
