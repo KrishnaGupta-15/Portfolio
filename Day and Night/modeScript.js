@@ -2,6 +2,7 @@ const box = document.getElementById("box");
 const sun = document.getElementById("sun");
 const toggleBox = document.getElementById("toggleBox");
 const modeText = document.getElementById("modeText");
+const returnButton = document.getElementById("returnButton");
 let isDay = true;
 box.addEventListener("click",  () => {
     if(isDay){
@@ -26,7 +27,7 @@ function day(){
     modeText.classList.remove("nightModeText");
     modeText.classList.add("dayModeText");
     document.body.style.backgroundColor = "rgb(174, 151, 81)";
-    
+    returnButton.style.backgroundColor = "rgb(209, 209, 117)";
    
     
 
@@ -43,7 +44,7 @@ function night(){
     modeText.classList.remove("dayModeText");
     modeText.classList.add("nightModeText");
     document.body.style.backgroundColor = "black";
-    
+    returnButton.style.backgroundColor = "#d3d3d3";
     
 }
 

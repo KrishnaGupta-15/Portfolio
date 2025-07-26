@@ -29,6 +29,19 @@ body{
     border-right: rgb(209, 209, 117) 10px solid;
     
 }
+#returnButton{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 80%;
+    /* left: 50%; */
+    background-color: rgb(209, 209, 117);
+    color: #220901;
+    height: 40px;
+    width: 150px;
+    border-radius: 8px;
+}
 #toggleBox{
     position: absolute;
     display: flex;
