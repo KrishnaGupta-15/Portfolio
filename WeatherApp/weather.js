@@ -7,7 +7,7 @@ const loadingScreen = document.querySelector(".loadingScreen");
 const userInfoContainer = document.querySelector(".user-info-container");
 const grantAccessButton = document.querySelector(".grantLocationButton");
 
-const apiKey="7a7e4cfdc340c8e7f2164a8b0480cda5";
+// const apiKey="api key removed ";
 
 let currentTab = userTab;
 currentTab.classList.add("current-tab");
