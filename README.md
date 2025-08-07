@@ -10,7 +10,7 @@ This is my personal portfolio website built to showcase my projects, skills, and
 - A password generating webpage where one can easily generate random password and copy it.
 - The password can contain UpperCase letter, LowerCase letter, Symbols and Numbers.
 - The generator also shows the  Strength  of the password.
-- Yellow button depicts strong password and Red button depicts weak password.
+- Green button depicts strong password, Yellow depicts moderate passwrd and Red button depicts weak password.
 
 **Technologies Used:**
 - HTML
